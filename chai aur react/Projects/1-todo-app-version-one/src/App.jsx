@@ -1,40 +1,19 @@
+import AddTodo from "./components/AddTodo"
+import AppName from "./components/AppName"
+import TodoItem1 from "./components/TodoItem1"
+import TodoItem2 from "./components/TodoItem2"
+
 function App() {
   return (
     <>
       <center className="todo-container">
-        
-        <div class="container text-center">
-          
-
+        <AppName></AppName>
+        <br></br>
+          <AddTodo></AddTodo>
+          <br></br>
+          <TodoItem1></TodoItem1>
             <br></br>
-          <div class="row">
-            <div class="col-6">
-              Buy Milk
-            </div>
-            <div class="col-4">
-              12/12/2024
-            </div>
-            <div class="col-2">
-            <button type="button" class="btn btn-dark">Delete</button>
-            </div>
-          </div>
-
-            <br></br>
-          <div class="row">
-            <div class="col-6">
-              Go to College
-            </div>
-            <div class="col-4">
-              30/12/2024
-            </div>
-            <div class="col-2">
-            <button type="button" class="btn btn-dark">Delete</button>
-            </div>
-          </div>
-        </div>
-
-
-
+          <TodoItem2></TodoItem2>
       </center>
     </>
   )

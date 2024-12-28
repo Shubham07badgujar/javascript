@@ -3,3 +3,5 @@ function AppName() {
         <h1>TODO APP</h1>
     );
 }
+
+export default AppName;
