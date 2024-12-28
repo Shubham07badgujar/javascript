@@ -2,18 +2,36 @@ function App() {
   return (
     <>
       <center className="todo-container">
-        <h1>TODO APP</h1>
-        <div class="container">
-  <div class="row">
-    <div class="col-sm-8">col-sm-8</div>
-    <div class="col-sm-4">col-sm-4</div>
-  </div>
-  <div class="row">
-    <div class="col-sm">col-sm</div>
-    <div class="col-sm">col-sm</div>
-    <div class="col-sm">col-sm</div>
-  </div>
-</div>
+        
+        <div class="container text-center">
+          
+
+            <br></br>
+          <div class="row">
+            <div class="col-6">
+              Buy Milk
+            </div>
+            <div class="col-4">
+              12/12/2024
+            </div>
+            <div class="col-2">
+            <button type="button" class="btn btn-dark">Delete</button>
+            </div>
+          </div>
+
+            <br></br>
+          <div class="row">
+            <div class="col-6">
+              Go to College
+            </div>
+            <div class="col-4">
+              30/12/2024
+            </div>
+            <div class="col-2">
+            <button type="button" class="btn btn-dark">Delete</button>
+            </div>
+          </div>
+        </div>
 
 
 
