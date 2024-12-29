@@ -5,9 +5,9 @@ const FoodItem = () => {
 
     return(
         <ul className="list-group">
-        {foodItem.map((item) => {
-            <Item foodItem = {item} ></Item>
-        })}          
+          {foodItem.map((item) => (
+            <Item key={item} foodItem = {item} ></Item>
+        ))}          
         </ul>
     );
 };
