@@ -1,10 +1,13 @@
+import Item from "./Item";
+
 const FoodItem = () => {
-    let myArray = ['Dal','GGreen Vegetable', 'Roti', 'Salad','Milk','ghee'];
+    let foodItems = ['Dal','GGreen Vegetable', 'Roti', 'Salad','Milk','ghee'];
 
     return(
         <ul className="list-group">
-         {myArray.map((item) => <li key={item} class="list-group-item">{item}</li>)}
-          
+        {foodItems.map((item) => {
+            <Item></Item>
+        })}          
         </ul>
     );
 };
