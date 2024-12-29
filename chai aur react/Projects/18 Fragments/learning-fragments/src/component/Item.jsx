@@ -1,5 +1,9 @@
-const Item = () => {
-     <li key={item} class="list-group-item">{item}</li>
+const Item = (props) => {
+     return (
+     <li 
+     class="list-group-item">
+     {props.foodItem}
+     </li>);
 }
 
 export default Item;
