@@ -11,7 +11,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <div>Healthy Food</div>
+      <div className='food-heading'>Healthy Food</div>
 
       <FoodItem item={foodItem}></FoodItem>
       <ErrorMessage item={foodItem} ></ErrorMessage>
