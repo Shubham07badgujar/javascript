@@ -7,14 +7,14 @@ import ErrorMessage from './component/ErrorMessage'
 import FoodItem from './component/FoodItem'
 
 function App() {
-  //  let myArray = ['Dal','GGreen Vegetable', 'Roti', 'Salad','Milk','ghee']
+   let foodItem = ['Dal','GGreen Vegetable', 'Roti', 'Salad','Milk','ghee']
 
   return (
     <React.Fragment>
       <div>Healthy Food</div>
 
-      <FoodItem></FoodItem>
-      <ErrorMessage></ErrorMessage>
+      <FoodItem item={foodItem}></FoodItem>
+      <ErrorMessage item={foodItem} ></ErrorMessage>
         
     </React.Fragment>
   )
