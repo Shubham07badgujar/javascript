@@ -5,19 +5,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ErrorMessage from './component/ErrorMessage'
 import FoodItem from './component/FoodItem'
+import Container from './component/Container'
 
 function App() {
    let foodItem = ['Dal','GGreen Vegetable', 'Roti', 'Salad','Milk','ghee']
 
   return (
-    <React.Fragment>
+    <Container>
       <div className='food-heading'>Healthy Food</div>
-
       <FoodItem item={foodItem}></FoodItem>
-      <ErrorMessage item={foodItem} ></ErrorMessage>
-        
-    </React.Fragment>
-  )
+      <ErrorMessage item={foodItem} ></ErrorMessage>        
+    </Container>
+  );
 }
 
 export default App;
