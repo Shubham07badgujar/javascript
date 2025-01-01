@@ -18,7 +18,7 @@ function App() {
   // console.log(`Cureent Value of textState is : ${textToShow}`);
 
   let [textToShow, setTextState] = useState();
-  let [foodItem, setFoodItems] = useState(["Dal", "Green Vegetable", "Roti"]);
+  let [foodItem, setFoodItems] = useState(["Dal", "Green Vegetable", "Roti","pasta"]);
 
   const onKeyDown = (event) => {
     if(event.key === 'Enter') {
