@@ -18,18 +18,22 @@ function App() {
   // console.log(`Cureent Value of textState is : ${textToShow}`);
 
   let [textToShow, setTextState] = useState();
-  let [foodItem, setFoodItems] = useState(["Dal", "Green Vegetable", "Roti","pasta"]);
+  let [foodItem, setFoodItems] = useState([
+    "Dal",
+    "Green Vegetable",
+    "Roti",
+    "pasta",
+  ]);
 
   const onKeyDown = (event) => {
-    if(event.key === 'Enter') {
-      let newFoodItem = event.target.value
-      let newAdd =[...foodItem,newFoodItem]
-      setFoodItems(newAdd)
+    if (event.key === "Enter") {
+      let newFoodItem = event.target.value;
+      let newAdd = [...foodItem, newFoodItem];
+      setFoodItems(newAdd);
       console.log("food Value is " + newFoodItem);
-      
     }
   };
-  
+
   return (
     <>
       <Container>
@@ -42,7 +46,6 @@ function App() {
       </Container>
 
       <Container>
-
         <p>
           Above is the list of healthy that are good for your health and well
           being
