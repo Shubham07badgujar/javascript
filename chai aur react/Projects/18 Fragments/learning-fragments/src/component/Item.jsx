@@ -1,12 +1,13 @@
 import FoodItem from "./FoodItem";
 import styles from "./Item.module.css";
-const Item = ({ foodItem }) => {
+const Item = ({ foodItem , bought,handleBuyButton }) => {
   return (
-    <li className="{styles['kg-item']} list-group-item">
+    <li className={` ${styles['kg-item']} list-group-item ${bought && "active"}`}>
       <span className={styles["kg-span"]}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={() => console.log(`${foodItem} being bought`)}
+        // onClick={() => console.log(`${foodItem} being bought`)}
+        onClick={handleBuyButton}
       >
         Buy
       </button>

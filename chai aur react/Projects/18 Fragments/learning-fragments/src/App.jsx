@@ -32,7 +32,7 @@ function App() {
       setFoodItems(newAdd);
       console.log("food Value is " + newFoodItem);
     }
-  };
+  };  
 
   return (
     <>
