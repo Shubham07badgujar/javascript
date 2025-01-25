@@ -1,7 +1,7 @@
 const dbConnect = require("./mongodb");
 dbConnect().then((resp) => {
   resp
-    .find({ name: "redmo note 10" })
+    .find()
     .toArray()
     .then((data) => {
       console.log(data);
@@ -14,9 +14,3 @@ dbConnect().then((resp) => {
 // };
 // main();
 
-dbConnect().then((resp)=>{
-   resp.find().toArray().then((data)=>{
-    console.warn(data);
-   })
-    
-})
