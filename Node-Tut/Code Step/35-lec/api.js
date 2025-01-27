@@ -20,11 +20,11 @@ app.post("/", async (req, resp) => {
   resp.send(result);
 });
 
-app.put("/", async (req, resp) => {
+app.put("/:name", async (req, resp) => {
   // console.log(req.body);
   let data = await dbConnect();
   let result = await data.updateOne(
-    { name: req.body.name },    
+    { name: req.params.name },    
     { $set:req.body }
   );
 
