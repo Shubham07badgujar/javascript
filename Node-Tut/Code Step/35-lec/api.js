@@ -1,5 +1,7 @@
 const express = require("express");
 const dbConnect = require("./mongodb");
+const mongodb = require("mongodb");
+
 const { name } = require("ejs");
 const app = express();
 
@@ -31,15 +33,11 @@ app.put("/:name", async (req, resp) => {
   resp.send({ result: "Put Method" });
 });
 
-// DELETE Route
 app.delete("/:id", async (req, resp) => {
-    try {
-      const data = await dbConnect();
-      const result = await data.deleteOne({ _id: new mongodb.ObjectId(req.params.id) });
-      resp.status(200).send(result);
-    } catch (error) {
-      console.error("Error deleting data:", error);
-      resp.status(500).send({ message: "Error deleting data" });
-    }
-  });
+    console.log(req.params.id); 
+    let data = await dbConnect();
+    let result = await data.deleteOne({ _id:new mongodb.ObjectId(req.params.id) });
+    
+    resp.send(result);
+    });
 app.listen(3000);
