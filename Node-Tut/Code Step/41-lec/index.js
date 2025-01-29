@@ -18,7 +18,7 @@ app.get("/list", async (req, resp) => {
     resp.send(data);
 });
 
-app.delete("/delete/:_id", async (req, resp) => {
+app.delete("/delete/:_id", async (req, resp) => { 
     console.log(req.params);
     let data = await Product.deleteOne(req.params);
     resp.send(data);
