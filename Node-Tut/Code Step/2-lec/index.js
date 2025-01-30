@@ -1,4 +1,4 @@
-const app = require('./app')
+// const app = require('./app')
 // console.log('hello');
 // console.log(app);
 // console.log(app.x);
