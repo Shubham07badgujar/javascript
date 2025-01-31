@@ -4,6 +4,8 @@
 
 
 const mySym = Symbol("key1");
+// console.log(mySym);
+
 const JsUser = {
     name: "shubham",
     "full name" :" Shubham Badgujar",
@@ -15,6 +17,8 @@ const JsUser = {
     lastLoginDays:["Monday", "Saturday"],
 
 }
+// console.log(JsUser);
+
 // console.log(JsUser.email);
 // console.log(JsUser["email"]);
 // console.log(JsUser["full name"]);
@@ -31,13 +35,13 @@ JsUser.greeting = function(){
     console.log("Hello JS users");
     
 }
-JsUser.greetingTwo = function(){
-    console.log(`Hello JS users , ${this.name}`);
+// JsUser.greetingTwo = function(){
+//     console.log(`Hello JS users , ${this.name}`);
     
-}
+// }
 console.log(JsUser.greeting());
-// console.log(JsUser.greeting);
+// // console.log(JsUser.greeting);
 
-console.log(JsUser.greetingTwo());
+// console.log(JsUser.greetingTwo());
 
 

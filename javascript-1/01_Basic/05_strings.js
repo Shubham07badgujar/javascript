@@ -29,4 +29,3 @@ const gameName = new String('hiteshhc-hc-com');
 // console.log(url.replace('%20' , '-'));
 // console.log(url.includes('sundar'));
 // console.log(gameName.split('-'));
-
