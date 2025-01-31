@@ -1,4 +1,6 @@
-ueInNumber);
-console.log(typeof null);
-console.log(marks);
-console.log(valueInNumber);
+
+# console.log( 2 >= 1);
+# console.log( 2 < 1);
+# console.log( 2 <= 1);
+# console.log( 2 == 1);
+# console.log( 2 != 1);

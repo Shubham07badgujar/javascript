@@ -1,9 +1,9 @@
-// # console.log( 2 > 1);
-// # console.log( 2 >= 1);
-// # console.log( 2 < 1);
-// # console.log( 2 <= 1);
-// # console.log( 2 == 1);
-// # console.log( 2 != 1);
+// console.log(2 > 1);
+// console.log(2 >= 1);
+// console.log(2 < 1);
+// console.log(2 <= 1);
+// console.log(2 == 1);
+// console.log(2 != 1);
 
 // console.log("shubham")
 
@@ -48,23 +48,23 @@
 
 // const myFunction = function() {
 //     console.log("Hello World");
-    
+
 // }
 // console.log(typeof bigNumber);  //undefined
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 
+
 // Stack (Primitive) , Heap (Non-Primitive)
-let myYouTubeName="shubham07Coder"
+let myYouTubeName = "shubham07Coder"
 let anotherName = myYouTubeName
 anotherName = "code with shubham"
 console.log(anotherName);
 console.log(myYouTubeName);
 
-let userOne ={ 
-    email : "shubham@gmail.com",
-    upi : "user@ybl"
+let userOne = {
+    email: "shubham@gmail.com",
+    upi: "user@ybl"
 }
 
 let userTwo = userOne
