@@ -1,11 +1,11 @@
 let score = "33"
 let marks = null
-// let marks1=undefined
+let marks1=undefined
 
 // console.log(typeof score);
 // console.log(typeof (score));
 
-// let valueInNumber = Number(score);
+let valueInNumber = Number(score);
 // let valueInNumber = Number(marks);
 
 // console.log(typeof valueInNumber);
@@ -59,12 +59,12 @@ let negValue = -value;
 
 // console.log(+true);
 
-let num1,num2,num3
+// let num1,num2,num3
 
-num1 = num2 = num3 = 2 + 2
+// num1 = num2 = num3 = 2 + 2
 
-gameCounter  = 100
-gameCounter++;
-++gameCounter;
-console.log(gameCounter);
+// gameCounter  = 100
+// gameCounter++;
+// ++gameCounter;
+// console.log(gameCounter);
 
