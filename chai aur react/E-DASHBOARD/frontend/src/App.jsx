@@ -2,15 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Nav from './Nav'
+import Nav from './components/Nav'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
-      <div className='app'>
+    <div>
+      <BrowserRouter className='body'>
       <Nav />
       <Routes>
         <Route path='/' element={<h1>Product Listening Component</h1>}/>
@@ -20,9 +21,9 @@ function App() {
         <Route path='/profile' element={<h1>profile Component</h1>}/>
        
       </Routes>
-      
-      </div>
     </BrowserRouter>
+    <Footer></Footer>
+    </div>
   )
 }
 

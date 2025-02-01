@@ -4,8 +4,8 @@ import './Nav.css'
 
 const Nav = () => {
   return (
-    <div>
-      <ul className='ul-li'>
+    <div className='nav-first-div'>
+      <ul className='nav-ul'>
         <li><Link to="/">Product</Link></li>
         <li><Link to="/add">Add product</Link></li>
         <li><Link to="/update">update product</Link></li>
