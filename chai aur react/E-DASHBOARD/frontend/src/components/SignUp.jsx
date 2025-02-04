@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import "./SignUp.css";
 import { use } from "react";
 
@@ -13,16 +13,18 @@ const SignUp = () => {
     console.warn("Name: ", name);
     console.warn("Email: ", email);
     console.warn("Password: ", password);
-    const result = await fetch('http://localhost:3000/register', {
+    let result = await fetch('http://localhost:3000/register', {
       method: 'post',
       body: JSON.stringify({ name, email, password }),
       headers: {
         'Content-Type': 'application/json'
       },
     });
-    console.warn(await result.json());
+    result = await result.json();
+    console.warn(result);
+    localStorage.setItem("user", JSON.stringify(result));
 
-    if(result){
+    if (result) {
       navigate('/')
     }
   };
