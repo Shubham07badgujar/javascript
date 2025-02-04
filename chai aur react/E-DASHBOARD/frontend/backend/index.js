@@ -1,19 +1,19 @@
 const express = require("express");
+require('./db/config');
+const cors = require('cors');
+const User = require('./db/User');
 const mongoose = require('mongoose');
 const app = express();
 
-const connectDB = async () =>{
-    mongoose.connect('mongodb://127.0.0.1/e-comm');
-    const productSchema = new mongoose.Schema({});
-    const product = mongoose.model('product',productSchema);
-    const data = await product.find();
-    console.log(data);
-    
-}
+app.use(express.json());
+// Enable CORS for all domains (you can restrict to specific origins if needed)
+app.use(cors());
 
-connectDB();
+app.post('/register', async (req, resp) => {
+    let user = new  User(req.body);
+    let result =await user.save();
+    resp.send(req.body);
+});
 
-// app.get("/",(req, resp)=>{
-//     resp.send("app is working...");
-// });
+
 app.listen(3000);
